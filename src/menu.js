@@ -22,32 +22,32 @@ function createMenu() {
     );
     menu.appendChild(
         createMenuItem(
-            "HOT YASAI ROLL",
-            "Rice, wakame seaweed, avocado, cucumbers, kanpyo, bell pepper, sesame seeds, sesame sauce, tempura"
+            "CALIFORNIA EBI",
+            "Shrimp, rice, wakame seaweed, cucumber, avocado, mayonnaise, tobiko"
         )
     );
     menu.appendChild(
         createMenuItem(
-            "HOT YASAI ROLL",
-            "Rice, wakame seaweed, avocado, cucumbers, kanpyo, bell pepper, sesame seeds, sesame sauce, tempura"
+            "CANADA ROLL",
+            "Rice, wakame seaweed, salmon, eel, avocado, unagi sauce, sesame seeds, cream cheese"
         )
     );
     menu.appendChild(
         createMenuItem(
-            "HOT YASAI ROLL",
-            "Rice, wakame seaweed, avocado, cucumbers, kanpyo, bell pepper, sesame seeds, sesame sauce, tempura"
+            "GREEN DRAGON ROLL",
+            "Rice, wakame seaweed, salmon, cream cheese, avocado, iceberg lettuce"
         )
     );
     menu.appendChild(
         createMenuItem(
-            "HOT YASAI ROLL",
-            "Rice, wakame seaweed, avocado, cucumbers, kanpyo, bell pepper, sesame seeds, sesame sauce, tempura"
+            "KATANA ROLL",
+            "Rice, salmon, wakame seaweed, cream cheese, mango, arugula"
         )
     );
     menu.appendChild(
         createMenuItem(
-            "HOT YASAI ROLL",
-            "Rice, wakame seaweed, avocado, cucumbers, kanpyo, bell pepper, sesame seeds, sesame sauce, tempura"
+            "MANGO ROLL",
+            "Rice, cream cheese, wakame seaweed, mango, cucumbers, eel"
         )
     );
 
@@ -65,7 +65,7 @@ function createMenuItem(name, description){
     foodDescription.textContent = description;
 
     const foodImage = document.createElement("img");
-    foodImage.src = `images/rolls/${name.toLowerCase()}.png`;
+    foodImage.src = `images/rolls/${name.toLowerCase()}.jpg`;
     foodImage.alt = `${name}`;
 
     menuItem.appendChild(foodImage);
@@ -80,3 +80,5 @@ function loadMenu() {
     main.textContent = "";
     main.appendChild(createMenu());
 }
+
+export default loadMenu;
