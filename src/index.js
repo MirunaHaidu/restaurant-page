@@ -56,15 +56,15 @@ function createNav() {
 }
 
 function setActiveButton(button) {
-  const buttons = document.querySelectorAll(".button-nav");
+    const buttons = document.querySelectorAll(".button-nav");
 
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove("active");
-    }
-  });
+    buttons.forEach((button) => {
+        if (button !== this) {
+            button.classList.remove("active");
+        }
+    });
 
-  button.classList.add("active");
+    button.classList.add("active");
 }
 
 
@@ -87,10 +87,18 @@ function createFooter() {
     return footer;
 }
 
-const content = document.getElementById("content");
-content.appendChild(createHeader());
-content.appendChild(createMain());
-content.appendChild(createFooter());
 
-setActiveButton(document.querySelectorAll(".button-nav"));
-loadHome();
+
+function initializeWebsite() {
+    const content = document.getElementById("content");
+    content.appendChild(createHeader());
+    content.appendChild(createMain());
+    content.appendChild(createFooter());
+
+
+
+    setActiveButton(document.querySelector(".button-nav"));
+    loadHome();
+}
+
+initializeWebsite();

@@ -16,8 +16,8 @@ function createMenu() {
     );
     menu.appendChild(
         createMenuItem(
-            "CALIFORNIA SYAKE ROLL",
-            "Rice, fried salmon, avocado, cucumber, mayonnaise, sesame seeds, wakame seaweed"
+            "RAINBOW MIX",
+            "Rice, squid, cream cheese, cucumbers, salmon, eel, tuna, shrimp, wakame seaweed, tobiko roe."
         )
     );
     menu.appendChild(

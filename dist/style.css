@@ -1,13 +1,188 @@
-
+:root {
+    --white: #f8f4f9;
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-light-hover: rgba(99, 99, 99, 0.4);
+    --background-dark: rgba(0, 0, 0, 0.9);
+    --border-color: #222;
+}
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
+}
+
+
+body {
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: var(--background-dark);
+
+}
+
+header {
+    font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-name {
+    margin-bottom: 1rem;
+    font-size: 6rem;
+}
+
+.button-nav {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+    color: var(--white)
+}
+
+.button-nav.active {
+    border-bottom: 2px solid var(--white);
+}
+
+.button-nav:hover {
+    transform: translateY(-10%);
+}
+
+.main {
+    font-size: 1.5rem;
+
 }
 
 
 
-/* --- --- --- --- --- HEADER --- --- --- --- --- --- */
+/* HOME */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://s1.picswalls.com/wallpapers/2014/07/24/beautiful-sushi-wallpaper_112712553_82.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding-top: 12rem;
+    font-size: 2rem;
+}
+
+.home p {
+    padding: 1rem;
+}
+
+
+
+/* MENU */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    animation: fadeIn 1.5s;
+    padding: 0 130px;
+    margin: 6rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: var(--background-light-hover);
+}
+
+.menu-item img {
+    width: 60%;
+}
+
+.menu-item h2 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-item p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 15rem;
+    gap: 1rem;
+}
+
+.contact p {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact img {
+    padding: 1rem;
+    opacity: 90%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+}
